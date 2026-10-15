@@ -196,3 +196,5 @@ input[type=checkbox],input[type=range]{accent-color:#5a7b46}
 @media(max-width:760px){.petpet-workspace{gap:12px}.petpet-controls input{margin:6px 0 8px}.petpet-controls label{font-size:11px}.petpet-controls button{font-size:11px;padding:9px 3px}}
 
 .petpet-controls .download{background:#526f3f;color:#fffdf2;border:1px solid #486238}.petpet-controls .download:disabled{background:#dfe4d0;color:#58634c;border-color:#a4af8c}
+
+.petpet-stage{position:relative;touch-action:none;cursor:grab;user-select:none;-webkit-user-select:none;overflow:hidden}.petpet-stage:active{cursor:grabbing}#petpet-preview{pointer-events:none;-webkit-user-drag:none}#petpet-placement{display:none;position:absolute;inset:0;width:100%;height:100%;pointer-events:none}.petpet-stage.placing #petpet-placement{display:block}.petpet-stage.placing #petpet-preview{visibility:hidden}.petpet-position-head{display:flex;align-items:center;justify-content:space-between;font-size:12px;margin:7px 0}.petpet-position-head button{font-size:10px}.petpet-drag-note{font-size:11px;color:#44563a;max-width:230px;text-align:center;margin:7px 0}.petpet-workspace{align-items:start}
