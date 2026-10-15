@@ -184,3 +184,15 @@ input[type=checkbox],input[type=range]{accent-color:#5a7b46}
 .garden-banner{font-family:"Chalkboard SE","Comic Sans MS","ZCOOL KuaiLe",cursive;font-weight:700}
 .settings .sizes .selected{background:linear-gradient(115deg,#6b854f,#4f6e3f)}
 .tool-button.selected,.main-actions .download{background:linear-gradient(115deg,#64814d,#48683a)}
+
+.petpet-open{display:block;width:100%;margin:0 0 12px;background:#fffaf2;border-color:#94a777;color:#354c30;padding:10px;font-size:14px;box-shadow:0 2px #aabb7c33}
+.petpet-open:disabled{color:#647158;background:#e3e8d6;cursor:not-allowed}
+.settings.petpet-panel{display:block;margin:0 0 12px;background-image:linear-gradient(115deg,#fffdf7aa,#f8f3e8aa)}
+.petpet-workspace{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:center}
+.petpet-stage{display:flex;align-items:center;justify-content:center;aspect-ratio:1;max-width:230px;background-color:#fffdf6;background-image:conic-gradient(#e2e6d5 25%,transparent 0 50%,#e2e6d5 0 75%,transparent 0);background-size:20px 20px;border:1px solid #cdd2bc;border-radius:14px}
+#petpet-preview{width:100%;height:auto;object-fit:contain}
+.petpet-controls{min-width:0}.petpet-controls label{display:flex;justify-content:space-between;font-size:12px;margin:3px 0}.petpet-controls input{margin:8px 0 12px}.petpet-controls button{font-size:12px;padding:10px;margin-top:4px}
+#petpet-status,.petpet-credit{font-size:11px;color:#44563a;line-height:1.5;margin:9px 0 0}.petpet-credit a{color:#3d5d2b}
+@media(max-width:760px){.petpet-workspace{gap:12px}.petpet-controls input{margin:6px 0 8px}.petpet-controls label{font-size:11px}.petpet-controls button{font-size:11px;padding:9px 3px}}
+
+.petpet-controls .download{background:#526f3f;color:#fffdf2;border:1px solid #486238}.petpet-controls .download:disabled{background:#dfe4d0;color:#58634c;border-color:#a4af8c}

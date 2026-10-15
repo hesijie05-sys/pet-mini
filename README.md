@@ -11,3 +11,7 @@
 ## 依赖
 
 抠图使用 [IMG.LY background-removal](https://github.com/imgly/background-removal-js)，版本 1.7.0，遵循其 AGPL 许可。该项目通过 esm.sh 加载引擎。
+
+## 摸头动画素材
+
+手掌精灵图来自 https://xhnav.com/petpet/img/sprite.png ，动作参考 https://xhnav.com/petpet/ 。动画在浏览器本地生成，不上传用户照片。
