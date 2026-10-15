@@ -30,3 +30,30 @@ main{padding:16px 12px}
 }
 
 [hidden]{display:none!important}.photo-stage{position:relative;width:100%;line-height:0}.photo-stage img{max-height:none}.photo-stage canvas{position:absolute;inset:0;width:100%;height:100%;touch-action:none;cursor:crosshair;border-radius:8px}.crop-actions{display:flex;gap:12px;align-items:center;margin-top:12px}.tool-button{border:1px solid #dce3d1;background:#f7f9f1;color:#45603c;border-radius:20px;padding:9px 16px;font:inherit;font-size:12px}.tool-button.selected{background:#d6ed94;border-color:#96ac72}#retouch{margin-top:20px;border-top:1px solid #edf0e8;padding-top:20px}.brush-modes{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:12px}.brush-modes label{font-size:12px;margin-left:auto}.brush-modes input{flex-basis:100%}#retouch-canvas{display:block;width:100%;height:auto;touch-action:none;cursor:crosshair;border-radius:12px;background-color:#fafbf7;background-image:conic-gradient(#e9ede3 25%,transparent 0 50%,#e9ede3 0 75%,transparent 0);background-size:16px 16px}.retouch-note{font-size:11px;color:#85927a;line-height:1.6}.crop-actions button{min-height:40px}
+
+/* Stronger contrast while retaining the soft green palette. */
+body{background:#edf1e6;color:#203d2c}
+.editor,.result{border-color:#aab89c;box-shadow:0 3px 14px #263b2010}
+h2{color:#203d2c}
+.text-button,.file-note,#status,.field-label small,.custom,output,.range-labels,.preview-caption,.export-note,.retouch-note{color:#4e6043}
+.primary{background:#c8e887;color:#183820;border:1px solid #698840}
+.primary:hover{background:#b8dd6b}
+.primary:disabled{background:#dce2d6;color:#58654f;border-color:#a1ae94}
+.download{background:#254d36;color:#fff;border-color:#254d36}
+.download:hover{background:#173b27}
+.download:disabled{background:#dce2d6;color:#58654f;border-color:#a1ae94}
+.sizes button{color:#334c2b;border-color:#8fa17f;background:#fff}
+.sizes .selected{color:#fff;background:#365c30;border-color:#365c30;box-shadow:0 0 0 1px #365c30}
+.tool-button{color:#304d29;border-color:#8fa17f;background:#f6f9ef}
+.tool-button.selected{color:#fff;background:#365c30;border-color:#365c30}
+.badge{color:#35502a;background:#e3edce;border:1px solid #a0b387}
+.upload{background:#e4ebda}
+.upload-cover{color:#294321;background:#fff;border:1px solid #b1bfa3}
+#empty{color:#4e6043}
+#empty>span{color:#647f4c}
+.colors button{border:1px solid #66755a}
+.colors button.active{outline:3px solid #284f2b;outline-offset:3px}
+input[type=range]{accent-color:#3e672f}
+input[type=checkbox]{accent-color:#365c30}
+.options-head,#retouch{border-top-color:#b7c4aa}
+button:focus-visible,label:focus-within{outline:3px solid #214e2b;outline-offset:3px}
