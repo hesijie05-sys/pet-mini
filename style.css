@@ -57,3 +57,66 @@ input[type=range]{accent-color:#3e672f}
 input[type=checkbox]{accent-color:#365c30}
 .options-head,#retouch{border-top-color:#b7c4aa}
 button:focus-visible,label:focus-within{outline:3px solid #214e2b;outline-offset:3px}
+
+/* Compare first, controls below, including on phones. */
+main{max-width:920px;padding:16px 18px;--preview-height:260px}
+.workspace.compact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;align-items:start}
+.compact .editor,.compact .result{padding:12px;border-radius:14px;box-shadow:none}
+.compact .section-head{margin-bottom:10px;gap:6px}
+.compact h2{font-size:14px}
+.compact #dimensions{font-size:11px;white-space:nowrap;color:#4e6043}
+.compact .text-button{padding:3px;font-size:11px}
+.compact .upload{height:calc(var(--preview-height) + 30px);min-height:0;padding:0;gap:4px;background:#e4ebda;border-radius:9px;overflow:hidden}
+.compact .photo-stage{width:min(100%,calc(var(--preview-height) * var(--photo-ratio,1.77778)));flex:0 1 auto;min-height:0}
+.compact .photo-stage img{width:100%;height:auto;max-height:none;object-fit:contain;border-radius:0}
+.compact .upload-cover{margin:0;padding:4px 8px;border:0;background:transparent;line-height:1.3;font-size:11px}
+.compact .preview{height:calc(var(--preview-height) + 30px);aspect-ratio:auto;border-radius:9px}
+.compact #empty>span{font-size:36px}
+.compact #empty p{font-size:11px;margin:5px 0}
+.compact .crop-actions{margin:7px 0 0;gap:6px;min-height:30px}
+.compact .crop-actions button{min-height:30px;padding:5px 9px;font-size:11px}
+.compact .file-note{margin:5px 0 0;font-size:11px;line-height:1.4}
+.compact .preview-caption{margin:8px 0 0;font-size:11px;gap:4px;flex-wrap:wrap;line-height:1.4}
+.main-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+.main-actions .primary{padding:11px;font-size:14px;border-radius:9px}
+#status{margin:7px 0 10px;min-height:18px;font-size:11px;line-height:1.5}
+.settings{padding:13px 16px;border:1px solid #aab89c;border-radius:14px;background:#fff;display:grid;grid-template-columns:1fr 1fr;column-gap:24px;align-items:center}
+.settings>h2{grid-column:1/-1;margin:0 0 8px;font-size:14px}
+.settings>.field-label{grid-column:1;grid-row:2}
+.settings>.sizes{grid-column:1;grid-row:3;margin:6px 0 8px;gap:6px}
+.settings .sizes button{padding:8px 3px;font-size:12px;white-space:nowrap}
+.settings>.row:has(#outline){grid-column:2;grid-row:2}
+.settings>.colors{grid-column:2;grid-row:3;margin:6px 0 8px;gap:10px}
+.settings>.row{margin:0}
+.settings>.row:has(#width-label){grid-column:1/-1;grid-row:4;margin-top:3px}
+.settings>#width{grid-column:1/-1;grid-row:5;margin:7px 0}
+.settings>.range-labels{display:none}
+#retouch{padding:12px 16px;border:1px solid #aab89c;background:#fff;border-radius:14px;margin-top:10px}
+#retouch summary{cursor:pointer;color:#294c2c;font-size:14px}
+#retouch .section-head{margin:10px 0}
+#retouch-canvas{max-width:550px;margin:auto}
+#retouch .retouch-note{margin-bottom:0}
+@media(max-width:760px){
+ main{padding:10px 8px;--preview-height:clamp(105px,34vw,210px)}
+ .workspace.compact{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px}
+ .compact .editor,.compact .result{padding:7px;border-radius:11px}
+ .compact .section-head{margin-bottom:7px}
+ .compact h2{font-size:13px}
+ .compact #dimensions{font-size:10px}
+ .compact .text-button{font-size:10px}
+ .compact .crop-actions{gap:3px;flex-wrap:wrap}
+ .compact .crop-actions button{font-size:10px;padding:5px 7px}
+ .compact .upload-cover{font-size:10px;padding:3px 5px}
+ .compact .preview-caption,.compact .file-note{font-size:10px}
+ .main-actions{gap:6px;margin-top:8px}
+ .main-actions .primary{padding:10px 4px;font-size:13px}
+ .settings{display:block;padding:11px 12px}
+ .settings>h2{margin-bottom:10px}
+ .settings>.sizes{margin:6px 0 10px}
+ .settings>.row{display:flex;margin:7px 0}
+ .settings>.colors{margin:8px 0 11px;gap:12px}
+ .settings .sizes button{padding:8px 2px}
+ .settings .colors button{width:24px;height:24px}
+ .settings .custom{font-size:11px}
+ #status{margin:6px 2px 9px}
+}
